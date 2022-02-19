@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SpeakXamarin.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+            <Label Text="Welcome to Xamarin.Forms!" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+        <Entry x:Name="EntryText" Placeholder="Enter Text" />
+        <Button x:Name="BtnSpeak" HorizontalOptions="Center" Text="Speak" Clicked="BtnSpeak_Clicked" />
+        <Label x:Name="LblVolumeSlider" />
+        <Slider x:Name="VolumeLevel" MinimumTrackColor="Black" MaximumTrackColor="Blue" ThumbColor="Crimson" Minimum="0" Maximum="1" Value="1" ValueChanged="VolumeLevel_ValueChanged" />
+        <Label x:Name="LblPitchSlider" />
+        <Slider x:Name="PitchLevel" MinimumTrackColor="Black" MaximumTrackColor="Blue" ThumbColor="Crimson" Minimum="0" Maximum="1" Value="1" ValueChanged="PitchLevel_ValueChanged" />
+    </StackLayout>
+
+</ContentPage>
